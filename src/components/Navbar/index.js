@@ -1,12 +1,17 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import {
+    Nav,
+    NavLink,
+    Bars,
+    NavMenu,
+} from './NavbarElements'
 
 const Navbar = () => {
     return (
         <>
             <Nav>
                 <NavLink to="/">
-                    <h1>Logo</h1>
+                    <img src={require('../../Assets/Images/Logo.png')} alt="Logo" />
                 </NavLink>
                 <Bars />
                 <NavMenu>
@@ -34,4 +39,5 @@ const Navbar = () => {
     )
 }
 
-export default index
+export default Navbar
+
