@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Sora&display=swap");
 
+:root {
+  --blue: #15cdfc;
+  --white: #fff;
+}
+
+html {
+  overscroll-behavior: none;
+}
 * {
   font-family: "Sora", sans-serif;
   box-sizing: border-box;

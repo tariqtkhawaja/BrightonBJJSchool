@@ -17,8 +17,8 @@ const Sidebar = ({ isOpen, toggle }) => {
                 </Icon>
                 <SidebarWrapper>
                     <SidebarMenu>
-                        <SidebarLink to="who-we-are" onClick={toggle}>
-                            Who We Are
+                        <SidebarLink to="who-are-we" onClick={toggle}>
+                            Who Are We
                         </SidebarLink>
                         <SidebarLink to="our-values" onClick={toggle}>
                             Our Values
