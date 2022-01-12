@@ -5,6 +5,8 @@ import Home from './pages';
 import WhoWeAre from './pages/WhoWeAre';
 import OurValues from './pages/OurValues';
 import WhatIsBJJ from './pages/WhatIsBjj';
+import Timetable from './pages/Timetable';
+
 function App() {
   return (
     <Router>
@@ -13,6 +15,7 @@ function App() {
         <Route path="/who-are-we" element={<WhoWeAre />} />
         <Route path="/our-values" element={<OurValues />} />
         <Route path="/what-is-bjj" element={<WhatIsBJJ />} />
+        <Route path="/timetable" element={<Timetable />} />
       </Routes>
     </Router>
   );
