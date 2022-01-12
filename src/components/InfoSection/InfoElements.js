@@ -18,13 +18,13 @@ export const InfoContainer = styled.div`
 `;
 
 export const InfoBg = styled.div`
-    position: absolute;
+    /* position: absolute; */
     top: 80px;
     right: 0;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     overflow: hidden;
 `;
 
