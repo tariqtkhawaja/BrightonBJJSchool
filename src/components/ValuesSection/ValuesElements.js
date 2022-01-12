@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const InfoRow = styled.div`
+export const ValuesRow = styled.div`
     display: grid;
     grid-auto-columns: minmax(auto, 1fr);
     align-items: center;
@@ -24,7 +24,7 @@ export const Column2 = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-    max-width: 540px;
+    max-width: 100vw;
     padding-top: 0;
     padding-bottom: 100px;
 
@@ -70,10 +70,11 @@ export const Img = styled.img`
     width: 100%;
     margin: 0 0 10px 0;
     padding-right: 0;
+    height: 30%;
 
 `;
 
-export const InfoContent = styled.div`
+export const ValuesContent = styled.div`
     z-index: 3;
     max-width: 1400px;
     position: absolute;
@@ -83,23 +84,8 @@ export const InfoContent = styled.div`
 `;
 
 
-export const InfoH1 = styled.div`
-    color: #fff;
-    font-size: 48px;
-    text-align: center;
-    margin-top: -15%;
-    ;
-    
-    @media screen and (max-width: 768px) {
-        font-size: 40px;
-    }
-    @media screen and (max-width: 480px) {
-        font-size: 32px;
-    }
-`;
-
-
-export const InfoP = styled.p`
+export const ValuesOl = styled.ol`
+    list-style-type: inherit;
     margin-top: 100px;
     color: #fff;
     font-size: 20px;
@@ -115,4 +101,3 @@ export const InfoP = styled.p`
         font-size: 16px;
     }
 `;
-

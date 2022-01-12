@@ -18,7 +18,7 @@ const WhoWeAre = () => {
         <>
             <Layout>
                 <InfoContent>
-                    <InfoRow >
+                    <InfoRow>
                         <Column1>
                             <TextWrapper>
                                 <TopLine>Who We Are</TopLine>

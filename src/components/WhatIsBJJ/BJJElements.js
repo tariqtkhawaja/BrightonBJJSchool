@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const InfoRow = styled.div`
+export const BjjRow = styled.div`
     display: grid;
     grid-auto-columns: minmax(auto, 1fr);
     align-items: center;
@@ -24,22 +24,24 @@ export const Column2 = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-    max-width: 540px;
+    max-width: 100vw;
     padding-top: 0;
     padding-bottom: 100px;
+    margin-top: 110%;
 
     @media screen and (max-width: 768px) {
-        margin-top: 80%;
+        padding-top: 300px;
+        margin-top: 150%;
     }
 
     @media screen and (max-width: 480px) {
-        margin-top: 100%;
-        padding-top: 100px;
+        margin-top: 170%;
+        padding-top: 500px;
     }
 
 `;
 
-export const TopLine = styled.p`
+export const TopLine1 = styled.p`
     color: var(--blue);
     font-size: 16px;
     line-height: 16px ;
@@ -49,9 +51,20 @@ export const TopLine = styled.p`
     margin-bottom: 16px;
     margin-top: 40%;
 `;
+export const TopLine2 = styled.p`
+    color: var(--blue);
+    font-size: 16px;
+    line-height: 16px ;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    margin-top: 20%;
+`;
+
 export const Heading = styled.h1` 
     margin-top: 0%;
-    margin-bottom: 24px;
+    margin-bottom: 12px;
     font-size: 48px;
     line-height: 1.1;
     font-weight: 600;
@@ -64,16 +77,23 @@ export const Heading = styled.h1`
 export const ImgWrap = styled.div`
     max-width: 555px;
     height: 100%;
+    margin-top: 100%;
+    margin-bottom: 24px;
+
+    @media screen and (max-width: 768px) {
+        margin-top: 0%;
+    }
 `;
 
 export const Img = styled.img`
     width: 100%;
     margin: 0 0 10px 0;
     padding-right: 0;
+    height: 30%;
 
 `;
 
-export const InfoContent = styled.div`
+export const BjjContent = styled.div`
     z-index: 3;
     max-width: 1400px;
     position: absolute;
@@ -83,23 +103,7 @@ export const InfoContent = styled.div`
 `;
 
 
-export const InfoH1 = styled.div`
-    color: #fff;
-    font-size: 48px;
-    text-align: center;
-    margin-top: -15%;
-    ;
-    
-    @media screen and (max-width: 768px) {
-        font-size: 40px;
-    }
-    @media screen and (max-width: 480px) {
-        font-size: 32px;
-    }
-`;
-
-
-export const InfoP = styled.p`
+export const BjjP = styled.p`
     margin-top: 100px;
     color: #fff;
     font-size: 20px;
@@ -115,4 +119,3 @@ export const InfoP = styled.p`
         font-size: 16px;
     }
 `;
-
