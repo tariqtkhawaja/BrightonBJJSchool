@@ -30,12 +30,12 @@ export const TextWrapper = styled.div`
     margin-top: 110%;
 
     @media screen and (max-width: 768px) {
-        padding-top: 300px;
-        margin-top: 150%;
+        padding-top: 400px;
+        margin-top: 230%;
     }
 
     @media screen and (max-width: 480px) {
-        margin-top: 170%;
+        margin-top: 270%;
         padding-top: 500px;
     }
 
