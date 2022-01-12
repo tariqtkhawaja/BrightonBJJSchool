@@ -6,6 +6,7 @@ import WhoWeAre from './pages/WhoWeAre';
 import OurValues from './pages/OurValues';
 import WhatIsBJJ from './pages/WhatIsBjj';
 import Timetable from './pages/Timetable';
+import Prices from './pages/Prices';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/our-values" element={<OurValues />} />
         <Route path="/what-is-bjj" element={<WhatIsBJJ />} />
         <Route path="/timetable" element={<Timetable />} />
+        <Route path="/prices" element={<Prices />} />
       </Routes>
     </Router>
   );

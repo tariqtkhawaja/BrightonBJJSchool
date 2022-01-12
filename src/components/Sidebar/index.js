@@ -17,22 +17,22 @@ const Sidebar = ({ isOpen, toggle }) => {
                 </Icon>
                 <SidebarWrapper>
                     <SidebarMenu>
-                        <SidebarLink to="who-are-we" onClick={toggle}>
+                        <SidebarLink to="/who-are-we" onClick={toggle}>
                             Who Are We
                         </SidebarLink>
-                        <SidebarLink to="our-values" onClick={toggle}>
+                        <SidebarLink to="/our-values" onClick={toggle}>
                             Our Values
                         </SidebarLink>
-                        <SidebarLink to="what-is-bjj" onClick={toggle}>
+                        <SidebarLink to="/what-is-bjj" onClick={toggle}>
                             What is BJJ
                         </SidebarLink>
-                        <SidebarLink to="timetable" onClick={toggle}>
+                        <SidebarLink to="/timetable" onClick={toggle}>
                             Timetable
                         </SidebarLink>
-                        <SidebarLink to="prices" onClick={toggle}>
+                        <SidebarLink to="/prices" onClick={toggle}>
                             Prices
                         </SidebarLink>
-                        <SidebarLink to="contact-us" onClick={toggle}>
+                        <SidebarLink to="/contact-us" onClick={toggle}>
                             Contact Us
                         </SidebarLink>
                     </SidebarMenu>

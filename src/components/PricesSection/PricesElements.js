@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ValuesRow = styled.div`
+export const PricesRow = styled.div`
     display: grid;
     grid-auto-columns: minmax(auto, 1fr);
     align-items: center;
@@ -29,16 +29,26 @@ export const TextWrapper = styled.div`
     padding-bottom: 100px;
 
     @media screen and (max-width: 768px) {
-        margin-top: 80%;
+        margin-top: 200%;
     }
 
     @media screen and (max-width: 480px) {
-        margin-top: 100%;
+        margin-top: 220%;
     }
 
 `;
 
-export const TopLine = styled.p`
+export const TopLine1 = styled.p`
+    color: var(--blue);
+    font-size: 16px;
+    line-height: 16px ;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    margin-top: 40%;
+`;
+export const TopLine2 = styled.p`
     color: var(--blue);
     font-size: 16px;
     line-height: 16px ;
@@ -63,6 +73,7 @@ export const Heading = styled.h1`
 export const ImgWrap = styled.div`
     max-width: 555px;
     height: 100%;
+    margin-top: 40%;
 `;
 
 export const Img = styled.img`
@@ -73,7 +84,7 @@ export const Img = styled.img`
 
 `;
 
-export const ValuesContent = styled.div`
+export const PricesContent = styled.div`
     z-index: 3;
     max-width: 1400px;
     position: absolute;
@@ -83,9 +94,25 @@ export const ValuesContent = styled.div`
 `;
 
 
-export const ValuesOl = styled.ol`
-    list-style-type: inherit;
-    margin-top: 100px;
+export const PricesUl = styled.ul`
+    list-style-type: none;
+    margin-top: 24px;
+    color: #fff;
+    font-size: 20px;
+    text-align: left;
+    max-width: 600px;
+    font-weight: lighter;
+    
+
+    @media screen and (max-width: 768px) {
+        font-size: 18px;
+    }
+    @media screen and (max-width: 480px) {
+        font-size: 16px;
+    }
+`;
+export const PricesP = styled.p`
+    margin-top: 24px;
     color: #fff;
     font-size: 20px;
     text-align: center;
