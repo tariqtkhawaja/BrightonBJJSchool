@@ -1,8 +1,6 @@
 import React from 'react'
+import Layout from '../Layout'
 import {
-    InfoContainer,
-    InfoBg,
-    InfoLogo,
     InfoRow,
     InfoContent,
     Column1,
@@ -18,12 +16,7 @@ import {
 const WhoWeAre = () => {
     return (
         <>
-            <InfoContainer>
-                <InfoBg>
-                    <InfoLogo>
-                        <img src={require('../../Assets/Images/Logo-transparent1.png')} height="500vh" width="auto" alt="Logo" />
-                    </InfoLogo>
-                </InfoBg>
+            <Layout>
                 <InfoContent>
                     <InfoRow >
                         <Column1>
@@ -48,7 +41,7 @@ const WhoWeAre = () => {
                         </Column2>
                     </InfoRow>
                 </InfoContent>
-            </InfoContainer>
+            </Layout>
         </>
     )
 }

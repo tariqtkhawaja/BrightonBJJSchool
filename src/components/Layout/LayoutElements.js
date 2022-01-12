@@ -11,6 +11,7 @@ export const LayoutContainer = styled.div`
     height: calc(100vh - ${NAVBAR_HEIGHT});
     position: relative;
     z-index: 1;
+    overflow: auto;
 `;
 
 export const LayoutBg = styled.div`
