@@ -32,7 +32,7 @@ const OurValues = () => {
                                 <ValuesOl>
                                     <li>Respect your training partners- we are here to progress and have fun together, not to feed our egos at the expense of others.</li>
                                     <br></br>
-                                    <li>No bullying and discrimination will be tolerated. Everyone should be able to enjoy training here, regardless of their race, sexual orientation, gender or cultural background.</li>
+                                    <li>Bullying and discrimination will not be tolerated. Everyone should be able to enjoy training here, regardless of their race, sexual orientation, gender or cultural background.</li>
                                     <br></br>
                                     <li>We are not interested in any tribal gym politics. We welcome visitors from other academies and we always encourage cross training.</li>
                                 </ValuesOl>

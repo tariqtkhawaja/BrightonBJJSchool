@@ -7,6 +7,7 @@ import OurValues from './pages/OurValues';
 import WhatIsBJJ from './pages/WhatIsBjj';
 import Timetable from './pages/Timetable';
 import Prices from './pages/Prices';
+import ContactUs from './pages/ContactUs';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/what-is-bjj" element={<WhatIsBJJ />} />
         <Route path="/timetable" element={<Timetable />} />
         <Route path="/prices" element={<Prices />} />
+        <Route path="/contact-us" element={<ContactUs />} />
       </Routes>
     </Router>
   );
