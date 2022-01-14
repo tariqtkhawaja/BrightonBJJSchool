@@ -4,10 +4,15 @@ export const HeroContent = styled.div`
     z-index: 3;
     max-width: 1200px;
     position: absolute;
-    padding: 8px 24px;
+    padding: 8px 48px;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media screen and (max-width: 768px) {
+        margin-top: 20%;
+
+    }
 `;
 
 export const HeroH1 = styled.div`

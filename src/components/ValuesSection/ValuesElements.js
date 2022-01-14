@@ -80,6 +80,8 @@ export const ValuesContent = styled.div`
     padding: 8px 24px;
     flex-direction: column;
     align-items: center;
+    top: -100px;
+
 `;
 
 

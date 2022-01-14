@@ -1,16 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Sora&display=swap");
 
-:root {
-  --blue: #15cdfc;
-  --white: #fff;
-}
+    :root {
+        --blue: #15cdfc;
+        --white: #fff;
+        --black: #000;
+        --gray: #0d0d0d;
+    }
 
-html {
-  overscroll-behavior: none;
-}
-* {
-  font-family: "Sora", sans-serif;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+    html {
+        overscroll-behavior: none;
+    }
+    
+    * {
+        font-family: "Sora", sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    ::-webkit-scrollbar,
+    ::-webkit-scrollbar-thumb {
+        width: 26px;
+        border-radius: 13px;
+        background-clip: padding-box;
+        border: 10px solid transparent;
+    }
+
+    *::-webkit-scrollbar-thumb {
+        color: var(--blue);
+        box-shadow: inset 0 0 0 10px;
+    }

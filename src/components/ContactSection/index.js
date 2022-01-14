@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../Layout'
-import Form from '../Form'
+import Form from '../ContactForm'
 import { BjjGoogleMap } from './GoogleMap'
 import {
     ContactContent,

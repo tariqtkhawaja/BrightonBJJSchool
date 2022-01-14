@@ -8,7 +8,6 @@ export const NAVBAR_HEIGHT = '80px';
 export const Nav = styled.nav`
     background: #000;
     height: 80px;
-    /* margin-top: -80px; */
     display: flex;
     justify-content: space-between;
     position: sticky;
@@ -46,8 +45,8 @@ export const NavLink = styled(LinkR)`
     cursor: pointer;
 
     &.active{ 
-      color:#15cdfc;
-      border-bottom: 3px solid #15cdfc;
+      color: var(--blue);
+      border-bottom: 3px solid var(--blue);
       
 }
 `
@@ -58,7 +57,7 @@ export const Bars = styled(FaBars)`
 @media screen and (max-width: 768px) {
     color: #fff;
     display: block;
-    position: absolute;
+    position: relative;
     top: 0;
     right: 0;
     transform: translate(-100%, 75%);

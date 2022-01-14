@@ -8,6 +8,7 @@ export const ContactContent = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden; 
 `;
 
 export const TopLine1 = styled.p`
@@ -17,8 +18,8 @@ export const TopLine1 = styled.p`
     font-weight: 700;
     letter-spacing: 1.4px;
     text-transform: uppercase;
+    text-align: center;
     margin-bottom: 16px;
-    margin-top: 40%;
 `;
 export const TopLine2 = styled.p`
     color: var(--blue);
@@ -27,8 +28,8 @@ export const TopLine2 = styled.p`
     font-weight: 700;
     letter-spacing: 1.4px;
     text-transform: uppercase;
+    text-align: center;
     margin-bottom: 16px;
-    margin-top: 20%;
 `;
 
 
@@ -37,6 +38,7 @@ export const TextWrapper = styled.div`
     max-width: 100vw;
     padding-top: 0;
     padding-bottom: 100px;
+    margin-top: 60%;
 
     @media screen and (max-width: 768px) {
         margin-top: 200%;
