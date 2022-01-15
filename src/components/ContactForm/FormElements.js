@@ -74,10 +74,35 @@ export const FormButton = styled.button`
         background: var(--blue);
         border: none;
         color: var(--black);
+        letter-spacing: 1.4px;
+        font-size: 16px;
+        font-weight: 700;
         cursor: pointer;
+  
+        
     }
 `;
 
-export const FormResult = styled.div`
+export const FormResultWrapper = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--green);
+    border-radius: 10px;
 
 `;
+
+export const FormResultP = styled.p`
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    
+`
+export const FormResultCloseButton = styled.button` 
+    background: none;
+    border: none;
+    cursor: pointer;
+
+`

@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import {
     GoogleMap,
     withScriptjs,
@@ -10,6 +11,22 @@ import { Component } from "react/cjs/react.production.min";
 
 // This is where we input the google map
 function Map() {
+    const [isInfoWindowOpen, setIsInfoWindowOpen] = useState(true);
+    const handleInfoWindowState = (infoWindowStatus) => {
+        console.log('Hello');
+        setIsInfoWindowOpen(infoWindowStatus);
+    }
+    const InfoWindowComponent = () => {
+        return (
+            <InfoWindow onCloseClick={() => handleInfoWindowState(false)} options={{ maxWidth: 320 }}>
+                <div>
+                    <h3>Brighton BJJ School</h3>
+                    <span>Vantage Point, New England Street, Brighton,  BN1 4GW</span>
+                </div>
+            </InfoWindow>
+        );
+    };
+
     return (
         <GoogleMap
             defaultZoom={16}
@@ -18,28 +35,21 @@ function Map() {
             <Marker
                 name="Brighton BJJ School"
                 position={{ lat: 50.83349991815755, lng: -0.13957246047302546 }}
-                onClick={InfoWindow.toggleOpen}
+                clickable={true}
+                onClick={() => handleInfoWindowState(!isInfoWindowOpen)}
             >
-                <InfoWindowComponent />
+                {isInfoWindowOpen ? <InfoWindowComponent /> : null}
             </Marker>
         </GoogleMap>
     );
 }
 
 const WrappedMap = withScriptjs(withGoogleMap(Map));
-const InfoWindowComponent = (props) => {
-    return (
-        <InfoWindow onCloseClick={props.toggleClose} options={{ maxWidth: 320 }}>
-            <div>
-                <h3>Brighton BJJ School</h3>
-                <span>Vantage Point, New England Street, Brighton,  BN1 4GW</span>
-            </div>
-        </InfoWindow>
-    );
-};
+
 
 export class BjjGoogleMap extends Component {
     render() {
+
         return (
             // div container style width and height always needs to be set explicitly
             <div style={{ width: "90vw", height: "40vh" }}>
