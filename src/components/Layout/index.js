@@ -12,6 +12,7 @@ const Layout = ({ children }) => {
                 </LayoutBg>
 
                 {children}
+
             </LayoutContainer>
         </>
     )

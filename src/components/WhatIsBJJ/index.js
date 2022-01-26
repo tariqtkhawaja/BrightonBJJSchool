@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../Footer';
 import Layout from '../Layout';
 import {
     BjjContent,
@@ -40,9 +41,8 @@ const WhatisBJJ = () => {
                                 <Img src={require('../../Assets/Images/Berimbolo.PNG')} />
                             </ImgWrap>
                         </Column2>
-
                     </BjjRow>
-
+                    <Footer />
                 </BjjContent>
 
             </Layout>

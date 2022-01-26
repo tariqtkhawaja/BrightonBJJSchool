@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../Layout'
+import Footer from '../Footer'
 import {
     InfoRow,
     InfoContent,
@@ -12,6 +13,7 @@ import {
     ImgWrap,
     Img
 } from './InfoElements'
+
 
 const WhoWeAre = () => {
     return (
@@ -40,6 +42,7 @@ const WhoWeAre = () => {
                             </ImgWrap>
                         </Column2>
                     </InfoRow>
+                    <Footer />
                 </InfoContent>
             </Layout>
         </>

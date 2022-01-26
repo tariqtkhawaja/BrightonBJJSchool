@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../Layout'
+import Footer from '../Footer'
 import {
     ValuesContent,
     ValuesRow,
@@ -39,6 +40,7 @@ const OurValues = () => {
                             </TextWrapper>
                         </Column2>
                     </ValuesRow>
+                    <Footer />
                 </ValuesContent>
             </Layout>
 

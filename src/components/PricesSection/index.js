@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../Footer'
 import Layout from '../Layout'
 import {
     PricesContent,
@@ -40,6 +41,7 @@ const PricesSection = () => {
                             </TextWrapper>
                         </Column2>
                     </PricesRow>
+                    <Footer />
                 </PricesContent>
             </Layout>
 

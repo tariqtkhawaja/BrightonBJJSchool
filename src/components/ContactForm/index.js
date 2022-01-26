@@ -28,7 +28,7 @@ const Form = () => {
     const [status, setStatus] = useState("Submit");
     const handleSubmit = async (e) => {
         e.preventDefault();
-        setStatus("Submitting ->");
+        setStatus("Sending ->");
         const { name, email, subject, message } = e.target.elements;
         let details = {
             name: name.value,
@@ -44,7 +44,8 @@ const Form = () => {
             body: JSON.stringify(details),
         });
         setStatus("Submit");
-        let result =  response;
+        let result = await response.json();
+        console.log(result)
         if (result.status === 200) {
             setFormResultStatus({
                 status: "success",

@@ -6,6 +6,7 @@ const dotenv = require("dotenv");
 const { google } = require("googleapis");
 
 dotenv.config();
+
 const OAuth2 = google.auth.OAuth2;
 
 const app = express();
@@ -23,16 +24,17 @@ const createTransporter = async () => {
     );
 
     oauth2Client.setCredentials({
-        refresh_token: process.env.REACT_APP_GMAIL_REFRESH_TOKEN
+        refresh_token: process.env.REACT_APP_GMAIL_REFRESH_TOKEN,
     });
+
 
     const accessToken = await new Promise((resolve, reject) => {
         oauth2Client.getAccessToken((err, token) => {
             if (err) {
-                reject("Failed to create access token")
+                reject("Failed to create access token");
             }
-            resolve(token)
-        })
+            resolve(token);
+        });
     });
     const transporter = nodemailer.createTransport({
         service: "gmail",
@@ -45,7 +47,9 @@ const createTransporter = async () => {
             refresh_token: process.env.REACT_APP_GMAIL_REFRESH_TOKEN
         }
     });
-    return transporter
+
+    return transporter;
+
 }
 
 
@@ -57,17 +61,33 @@ const createTransporter = async () => {
 //         console.log("Ready to Send");
 //     }
 // });
-//emailOptions - who sends what to whom
 
+
+//emailOptions - who sends what to whom
 const sendEmail = async (mail, res) => {
-    let emailTransporter = await createTransporter();
-    emailTransporter.sendMail(mail, (error) => {
-        if (error) {
-            res.json({ status: "ERROR " });
-        } else {
-            res.json({ status: "Message Sent" });
-        }
-    });
+    try {
+        let emailTransporter = await createTransporter();
+        emailTransporter.sendMail(mail,  => {
+    res.json({ status: "Message Sent" });
+        
+    catch (error) {
+        res.json({ status: "ERROR " });
+        console.log(error)
+    }
+}
+
+
+
+    // let emailTransporter = await createTransporter();
+    // emailTransporter.sendMail(mail, (error) => {
+    //     if (error) {
+    //         res.json({ status: "ERROR " });
+    //         console.log('Error', (error));
+    //     } else {
+    //         res.json({ status: "Message Sent" });
+    //     }
+    // });
+
 };
 
 router.post("/contact-us", (req, res) => {

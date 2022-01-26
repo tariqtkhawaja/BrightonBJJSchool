@@ -20,13 +20,15 @@ export const HeroH1 = styled.div`
     color: #fff;
     font-size: 48px;
     text-align: center;
-    margin-top: -15%;
+    margin-top: 15%;
     
     @media screen and (max-width: 768px) {
         font-size: 40px;
+        margin-top: 20%;
     }
     @media screen and (max-width: 480px) {
         font-size: 32px;
+        margin-top: 30%;
     }
 `;
 

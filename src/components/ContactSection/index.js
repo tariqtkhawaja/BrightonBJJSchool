@@ -9,6 +9,7 @@ import {
     TopLine2,
 
 } from './ContactElements'
+import Footer from '../Footer'
 
 
 
@@ -23,8 +24,8 @@ const ContactSection = () => {
                         <TopLine2>Find Us</TopLine2>
                     </TextWrapper>
                     <BjjGoogleMap />
+                    <Footer />
                 </ContactContent>
-
             </Layout>
 
         </>

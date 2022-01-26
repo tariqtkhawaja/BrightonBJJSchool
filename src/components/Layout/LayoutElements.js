@@ -3,7 +3,7 @@ import { NAVBAR_HEIGHT } from "../Navbar/NavbarElements";
 
 
 export const LayoutContainer = styled.div`
-    background: #0c0c0c;
+    background: var(--gray);
     display: flex;
     justify-content: center;
     align-items: center;
