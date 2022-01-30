@@ -38,14 +38,14 @@ export const TextWrapper = styled.div`
     max-width: 100vw;
     padding-top: 0;
     padding-bottom: 100px;
-    margin-top: 60%;
+    margin-top: 75%;
 
     @media screen and (max-width: 768px) {
         margin-top: 200%;
     }
 
     @media screen and (max-width: 480px) {
-        margin-top: 220%;
+        margin-top: 240%;
     }
 
 `;

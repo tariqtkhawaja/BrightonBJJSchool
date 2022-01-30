@@ -45,8 +45,8 @@ const Form = () => {
         });
         setStatus("Submit");
         let result = await response.json();
-        console.log(result)
-        if (result.status === 200) {
+        console.log(result, "Message Sent")
+        if (result.status === "success") {
             setFormResultStatus({
                 status: "success",
                 display: true,
@@ -70,7 +70,7 @@ const Form = () => {
                     <FormLabel for="message">Message</FormLabel><br></br>
                     <FormTextArea id="message" placeholder="Please write your message here..." rows="14" cols="50" required></FormTextArea><br></br>
                     <FormButton type="submit" id="submit">{status}</FormButton><br></br>
-                    {formResultStatus.display && (<FormResultWrapper>
+                    {formResultStatus.display && (<FormResultWrapper status={formResultStatus.status}>
                         <FormResultP>
                             {RESPONSE_MESSAGE[formResultStatus.status]}
                         </FormResultP>

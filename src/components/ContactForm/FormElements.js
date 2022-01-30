@@ -77,6 +77,7 @@ export const FormButton = styled.button`
         letter-spacing: 1.4px;
         font-size: 16px;
         font-weight: 700;
+        padding-bottom: 4px;
         cursor: pointer;
   
         
@@ -87,7 +88,8 @@ export const FormResultWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--green);
+    background-color: ${({ status }) => (status === 'success' ? 'var(--green)' : 'var(--red)')};
+    padding: 3px;
     border-radius: 10px;
 
 `;
@@ -98,6 +100,7 @@ export const FormResultP = styled.p`
     font-weight: 700;
     letter-spacing: 1.4px;
     text-transform: uppercase;
+    color: ${({ status }) => (status === 'success' ? 'var(--black)' : 'var(--white)')};
     
 `
 export const FormResultCloseButton = styled.button` 

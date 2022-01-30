@@ -73,13 +73,23 @@ export const Heading = styled.h1`
 export const ImgWrap = styled.div`
     max-width: 555px;
     height: 100%;
-    margin-top: 40%;
+    margin-top: 100%;
+
+    @media screen and (max-width: 768px) {
+        margin-top: -20%;
+    }
+
+    @media screen and (max-width: 480px) {
+        margin-top: -30%;
+    }
+
 `;
 
 export const Img = styled.img`
     width: 100%;
     margin: 0 0 10px 0;
     padding-right: 0;
+    border-radius: 8px;
     height: 30%;
 
 `;
@@ -126,4 +136,35 @@ export const PricesP = styled.p`
     @media screen and (max-width: 480px) {
         font-size: 16px;
     }
+`;
+
+export const SocialMedia = styled.section`
+max-width: 1000px;
+width: 100%;
+display: flex;
+justify-content: space-between;
+`;
+
+export const SocialMediaWrap = styled.div`
+display:flex;
+justify-content: center;
+align-items: center;
+max-width: 1100px;
+margin: 40px auto 0 auto; 
+
+@media screen and (max-width:820px) {
+    flex-direction: column;
+}
+`;
+
+export const SocialIcons = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+`;
+
+export const SocialIconsLink = styled.a` 
+    color: var(--white);
+    font-size: 24px;
 `;

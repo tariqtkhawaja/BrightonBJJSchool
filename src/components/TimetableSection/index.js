@@ -15,7 +15,7 @@ const TimetableSection = () => {
                 <TimetableContent>
                     <TopLine>Timetable</TopLine>
                     <ImgWrap>
-                        <Img src={require('../../Assets/Images/Timetable.PNG')} />
+                        <Img src={require('../../Assets/Images/Timetable.jpg')} />
                     </ImgWrap>
                     <Footer />
                 </TimetableContent>

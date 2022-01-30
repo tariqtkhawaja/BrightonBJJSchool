@@ -19,7 +19,7 @@ const createTransporter = async () => {
 
     const oauth2Client = new OAuth2(
         process.env.REACT_APP_GMAIL_CLIENT_ID,
-        process.env.REACT_APP_GMAIL_SECRET,
+        process.env.REACT_APP_GMAIL_CLIENT_SECRET,
         "https://developers.google.com/oauthplayground"
     );
 
@@ -43,7 +43,7 @@ const createTransporter = async () => {
             user: process.env.REACT_APP_USERNAME,
             accessToken,
             clientId: process.env.REACT_APP_GMAIL_CLIENT_ID,
-            clientSecret: process.env.REACT_APP_GMAIL_SECRET,
+            clientSecret: process.env.REACT_APP_GMAIL_CLIENT_SECRET,
             refresh_token: process.env.REACT_APP_GMAIL_REFRESH_TOKEN
         }
     });
@@ -67,28 +67,39 @@ const createTransporter = async () => {
 const sendEmail = async (mail, res) => {
     try {
         let emailTransporter = await createTransporter();
-        emailTransporter.sendMail(mail,  => {
-    res.json({ status: "Message Sent" });
-        
-    catch (error) {
-        res.json({ status: "ERROR " });
+        await emailTransporter.sendMail(mail);
+        res.json({ status: "success" });
+    } catch (error) {
+        res.json({ status: "error" });
         console.log(error)
+
     }
 }
 
+//     try {
+//         let emailTransporter = await createTransporter();
+//         emailTransporter.sendMail(mail, error => {
+//     res.json({ status: "Message Sent" });
+
+//     catch (error) {
+//         res.json({ status: "ERROR " });
+//         console.log(error)
+//     }
+// }
 
 
-    // let emailTransporter = await createTransporter();
-    // emailTransporter.sendMail(mail, (error) => {
-    //     if (error) {
-    //         res.json({ status: "ERROR " });
-    //         console.log('Error', (error));
-    //     } else {
-    //         res.json({ status: "Message Sent" });
-    //     }
-    // });
 
-};
+// let emailTransporter = await createTransporter();
+// emailTransporter.sendMail(mail, (error) => {
+//     if (error) {
+//         res.json({ status: "ERROR " });
+//         console.log('Error', (error));
+//     } else {
+//         res.json({ status: "Message Sent" });
+//     }
+// });
+
+
 
 router.post("/contact-us", (req, res) => {
     const name = req.body.name;
