@@ -54,15 +54,6 @@ const createTransporter = async () => {
 
 
 
-//     createTransporter.verify((error) => {
-//     if (error) {
-//         console.log("contact email verify error: ", error);
-//     } else {
-//         console.log("Ready to Send");
-//     }
-// });
-
-
 //emailOptions - who sends what to whom
 const sendEmail = async (mail, res) => {
     try {
@@ -75,29 +66,6 @@ const sendEmail = async (mail, res) => {
 
     }
 }
-
-//     try {
-//         let emailTransporter = await createTransporter();
-//         emailTransporter.sendMail(mail, error => {
-//     res.json({ status: "Message Sent" });
-
-//     catch (error) {
-//         res.json({ status: "ERROR " });
-//         console.log(error)
-//     }
-// }
-
-
-
-// let emailTransporter = await createTransporter();
-// emailTransporter.sendMail(mail, (error) => {
-//     if (error) {
-//         res.json({ status: "ERROR " });
-//         console.log('Error', (error));
-//     } else {
-//         res.json({ status: "Message Sent" });
-//     }
-// });
 
 
 
@@ -114,15 +82,6 @@ router.post("/contact-us", (req, res) => {
            <p>Email: ${email}</p>
            <p>Message: ${message}</p>`,
     };
-    // createTransporter.sendMail(mail, (error) => {
-    //     if (error) {
-    //         console.log("error: ", error);
-    //         res.json({ status: "ERROR" });
-    //     } else {
-    //         console.log("Success! ");
-    //         res.json({ status: "Message Sent" });
-    //     }
-    // });
 
 
     sendEmail(mail, res);

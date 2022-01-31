@@ -38,7 +38,7 @@ const WhoWeAre = () => {
                         </Column1>
                         <Column2>
                             <ImgWrap>
-                                <Img src={require('../../Assets/Images/ClassPhoto.jpg')} />
+                                <Img src={require('../../Assets/Images/ClassPhoto.jpg')} alt='Class Photo of Students lined up infront of Camera' />
                             </ImgWrap>
                         </Column2>
                     </InfoRow>

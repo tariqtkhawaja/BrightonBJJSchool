@@ -23,7 +23,7 @@ const OurValues = () => {
                     <ValuesRow>
                         <Column1>
                             <ImgWrap>
-                                <Img src={require('../../Assets/Images/Rolling.jpg')} />
+                                <Img src={require('../../Assets/Images/Rolling.jpg')} alt="Brazilian jiu-jitsu students rolling" />
                             </ImgWrap>
                         </Column1>
                         <Column2>
