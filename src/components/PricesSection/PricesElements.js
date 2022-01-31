@@ -46,7 +46,7 @@ export const TopLine1 = styled.p`
     letter-spacing: 1.4px;
     text-transform: uppercase;
     margin-bottom: 16px;
-    margin-top: 40%;
+    margin-top: 45%;
 `;
 export const TopLine2 = styled.p`
     color: var(--blue);
@@ -73,7 +73,7 @@ export const Heading = styled.h1`
 export const ImgWrap = styled.div`
     max-width: 555px;
     height: 100%;
-    margin-top: 100%;
+    margin-top: 110%;
 
     @media screen and (max-width: 768px) {
         margin-top: -20%;
