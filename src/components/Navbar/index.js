@@ -16,7 +16,7 @@ const Navbar = ({ toggle }) => {
                     <NavLogo to='/'>
                         <img src={require('../../Assets/Images/Logo-transparent1.png')} height="55vh" width="auto" alt="Logo" />
                     </NavLogo>
-                    <Bars onClick={toggle} />
+                    <Bars onClick={toggle} tabIndex={0} />
                     <NavMenu>
                         <NavLink to="/who-are-we" activeStyle>
                             Who Are We

@@ -29,14 +29,24 @@ export const TextWrapper = styled.div`
     padding-bottom: 100px;
     margin-top: 110%;
 
+    @media screen and (max-width: 1024px){
+        padding-top: 300px;
+        margin-top: 150%
+        
+    }
+
     @media screen and (max-width: 768px) {
         padding-top: 400px;
         margin-top: 230%;
     }
 
     @media screen and (max-width: 480px) {
-        margin-top: 270%;
+        margin-top: 320%;
         padding-top: 500px;
+    }
+    @media screen and (max-width: 390px) {
+        margin-top: 400%;
+        padding-top: 600px;
     }
 
 `;
