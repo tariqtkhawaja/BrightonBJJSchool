@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import axios from 'axios'
 import {
     FormWrapper,
     FormContent,
@@ -36,27 +37,36 @@ const Form = () => {
             subject: subject.value,
             message: message.value,
         };
-        let response = await fetch(process.env.PORT_KEY || "http://localhost:5000/contact-us", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json;charset=utf-8",
-            },
-            body: JSON.stringify(details),
-        });
-        setStatus("Submit");
-        let result = await response.json();
-        console.log(result, "Message Sent")
-        if (result.status === "success") {
-            setFormResultStatus({
-                status: "success",
-                display: true,
-            });
-        } else {
-            setFormResultStatus({
-                status: "error",
-                display: true,
+
+        axios.post('/api/sendmail', details)
+            .then(result => {
+                console.log("Result ", result);
+                if (result.status === "success") {
+                    setFormResultStatus({
+                        status: "success",
+                        display: true,
+                    });
+                } else {
+                    setFormResultStatus({
+                        status: "error",
+                        display: true,
+                    })
+                }
+            }).catch((err) => {
+                console.log(err.response)
             })
-        }
+
+        // let response = await fetch(process.env.REACT_APP_PORT_KEY || "http://localhost:5000/contact-us", {
+        //     method: "POST",
+        //     headers: {
+        //         "Content-Type": "application/json;charset=utf-8",
+        //     },
+        //     body: JSON.stringify(details),
+        // });
+        setStatus("Submit");
+        // let result = await response.json();
+        // console.log(result, "Message Sent")
+
 
     }
 

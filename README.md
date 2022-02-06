@@ -1,6 +1,45 @@
-# Getting Started with Create React App
+# Brighton BJJ School
+Building a website for my Brazilian Jiu Jitsu Club using React and Styled Components. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## The Process
+I set out to build a simple website for my BJJ club - Brighton BJJ School. I did this as I wanted to help the club launch their new site and I saw it as an opportunity to get more expierence with Tools I wanted to use. It was a useful exchange and a project that I really learnt from, Mainly I wanted to get to grips with using Styled Components
+
+
+The Goal was to create a simple website made up of the following pages: 
+- Homepage 
+- Who We Are
+- Our Values 
+- What is BJJ 
+- Timetable
+- Contact Us
+
+As the project grew so did my ambition for it. I decided to continue adding features, I implemented a google-map like I had done previously in my Nam Yang website and built a contact form which sends an email using nodemailer. This taught me alot about OAuth2 as I had to configure OAuth Client so that the email could send via gmail. 
+
+## The Tools
+- React 
+- Styled Components
+- `useState`
+- Node
+- Express
+- Cors
+- Nodemailer
+- OAuth2
+- `process.env`
+- Netlify
+- Google APIs
+
+## The Challenges
+I've recently started learning node so this was a great challenge to implement some of the ideas I'd been learning about. I created an async function called `createTransporter` which handled the OAuth2 Client and set the credentials correctly. I ran into a couple issues while creating this, one issue I had was where the Access token wasn't being created correctly so the email wasn't sending on a submission. I went through my code line by line using `console.log` to try and find the issue.. It turns out that my `clientSecret` was spelt incorrectly it was  `process.env.REACT_APP_CLIENT_SECRET` When it should have been `process.env.REACT_APP_GMAIL_CLIENT_SECRET`. 
+
+Another challenge I had was that I wanted the success or error boxes to pop up and be green or red depending on whether the message was a success or failure. 
+
+I created a `Form` function and used `useState` to set the state of the form. to display a pop up box, I wrote some javascript in my styled components to tie the status of `setFormResultStatus` to the background colour of my `FormResultWrapper`. 
+
+
+## To Do 
+- Deploy application using Netlify 
+- Implement Netlify Serverless functions so that the backend of the Form can run
+
 
 ## Available Scripts
 
@@ -29,42 +68,3 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

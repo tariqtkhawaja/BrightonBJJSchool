@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import HeroSection from "../components/HeroSection";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
-import Footer from "../components/Footer";
-// import { background } from '../Assets/Images/Logo-transparent.png';
+
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false)
 
