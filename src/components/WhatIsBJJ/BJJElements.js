@@ -30,8 +30,8 @@ export const TextWrapper = styled.div`
     margin-top: 110%;
 
     //iPad Pro
-    @media screen and (max-width: 830px){
-        padding-top: 400px;
+    @media screen and (max-width: 1024px){
+        padding-top: 80px;
         margin-top: 250%;
     }
     //Tablet
@@ -77,7 +77,7 @@ export const Heading = styled.h1`
     color: var(--blue);
     
     //iPad Pro
-    @media screen and (max-width: 830px){
+    @media screen and (max-width: 1024px){
         font-size: 2.6rem;
     }
     //mobile
@@ -91,7 +91,8 @@ export const ImgWrap = styled.div`
     margin-top: 100%;
     margin-bottom: 24px;
 
-    @media screen and (max-width: 830px){
+    //iPad Pro
+    @media screen and (max-width: 1024px){
     height: 100%;
     margin-top: 150%;
 
