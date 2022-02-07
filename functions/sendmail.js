@@ -1,6 +1,6 @@
 const nodemailer = require('nodemailer');
-const { google } = require("googleapis");
-const dotenv = require("dotenv");
+const { google } = require('googleapis');
+const dotenv = require('dotenv');
 
 
 dotenv.config();
@@ -44,11 +44,11 @@ const createTransporter = async () => {
 }
 exports.handler = async function (event, context, callback) {
 
-    let data = JSON.parse(event.body)
-    const transporter = await createTransporter()
+    let data = JSON.parse(event.body);
+    const transporter = await createTransporter();
 
 
-     transporter.sendMail({
+    return transporter.sendMail({
         from: data.email,
         to: process.env.REACT_APP_USERNAME,
         subject: `Contact Form Submission: ${data.subject}`,

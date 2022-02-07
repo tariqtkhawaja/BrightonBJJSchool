@@ -29,11 +29,17 @@ export const TextWrapper = styled.div`
     padding-bottom: 100px;
     margin-top: 110%;
 
+    //iPad Pro
+    @media screen and (max-width: 830px){
+        padding-top: 400px;
+        margin-top: 250%;
+    }
+    //Tablet
     @media screen and (max-width: 768px) {
         padding-top: 400px;
         margin-top: 230%;
     }
-
+    //Mobile
     @media screen and (max-width: 480px) {
         margin-top: 270%;
         padding-top: 500px;
@@ -43,7 +49,7 @@ export const TextWrapper = styled.div`
 
 export const TopLine1 = styled.p`
     color: var(--blue);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 16px ;
     font-weight: 700;
     letter-spacing: 1.4px;
@@ -53,7 +59,7 @@ export const TopLine1 = styled.p`
 `;
 export const TopLine2 = styled.p`
     color: var(--blue);
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 16px ;
     font-weight: 700;
     letter-spacing: 1.4px;
@@ -65,13 +71,18 @@ export const TopLine2 = styled.p`
 export const Heading = styled.h1` 
     margin-top: 0%;
     margin-bottom: 12px;
-    font-size: 48px;
+    font-size: 3rem;
     line-height: 1.1;
     font-weight: 600;
     color: var(--blue);
-
+    
+    //iPad Pro
+    @media screen and (max-width: 830px){
+        font-size: 2.6rem;
+    }
+    //mobile
     @media screen and (max-width: 480px){
-        font-size: 32px;
+        font-size: 2rem;
     }
 `
 export const ImgWrap = styled.div`
@@ -79,6 +90,12 @@ export const ImgWrap = styled.div`
     height: 100%;
     margin-top: 100%;
     margin-bottom: 24px;
+
+    @media screen and (max-width: 830px){
+    height: 100%;
+    margin-top: 150%;
+
+    }
 
     @media screen and (max-width: 768px) {
         margin-top: 0%;
