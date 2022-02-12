@@ -61,10 +61,18 @@ display a pop up box, I wrote some javascript in my styled components to tie the
 status of `setFormResultStatus` to the background colour of my
 `FormResultWrapper`.
 
+I Implemented a serverless lambda function using Netlify Functions so that the
+backend of the form can run properly. I did some research on deploying a node
+app and this seemed like the cheapest and best solution for my needs. I created
+a `functions` folder and created a `sendmail.js` file and used my nodemailer and
+OAuth2 code here wrapping the `sendMail()` method inside a `exports.handler`
+async function and using `axios` to post the data. I ran into an issue where the
+data is being sent but the response is not being received and it's generating a
+404 error on the server.
+
 ## To Do
 
-- Implement Netlify Serverless functions so that the backend of the Form can run
-  properly and debug stausCode 500 error
+- Debug the Netlify functions stausCode 404 error.
 - shrink photo sizes to boost performance and speed up application.
 - debug the logo colour issue in the deployed app
 - fix the refresh router issue on the deployed app.

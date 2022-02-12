@@ -32,7 +32,7 @@ export const TextWrapper = styled.div`
     //iPad Pro
     @media screen and (max-width: 1024px){
         padding-top: 80px;
-        margin-top: 250%;
+        margin-top: 200%;
     }
     //Tablet
     @media screen and (max-width: 768px) {
