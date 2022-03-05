@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { NAVBAR_HEIGHT } from "../Navbar/NavbarElements";
+
 
 export const InfoRow = styled.div`
     display: grid;
@@ -76,6 +78,7 @@ export const Img = styled.img`
 `;
 
 export const InfoContent = styled.div`
+    height: calc(100vh - ${NAVBAR_HEIGHT});
     z-index: 3;
     max-width: 1400px;
     position: absolute;

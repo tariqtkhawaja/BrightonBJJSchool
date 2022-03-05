@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { NAVBAR_HEIGHT } from "../Navbar/NavbarElements";
+
 
 export const ValuesRow = styled.div`
     display: grid;
@@ -78,6 +80,7 @@ export const Img = styled.img`
 export const ValuesContent = styled.div`
     z-index: 3;
     max-width: 1400px;
+    height: calc(100vh - ${NAVBAR_HEIGHT});
     position: absolute;
     padding: 8px 24px;
     flex-direction: column;

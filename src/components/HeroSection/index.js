@@ -8,7 +8,7 @@ const HeroSection = () => {
         <Layout>
             <HeroContent>
                 <HeroH1>Brighton BJJ School</HeroH1>
-                <HeroP>Affordable Brazilian jiu jitsu and submission grappling in centre of Brighton. <p>Everyone is welcome regardless of affiliation.</p></HeroP>
+                <HeroP>Affordable Brazilian Jiu Jitsu and Submission Grappling in centre of Brighton. <p>Everyone is welcome regardless of affiliation.</p></HeroP>
                 <Footer />
             </HeroContent>
         </Layout>

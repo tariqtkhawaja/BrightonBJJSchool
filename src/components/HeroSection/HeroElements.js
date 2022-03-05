@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { NAVBAR_HEIGHT } from "../Navbar/NavbarElements";
 
 export const HeroContent = styled.div`
     z-index: 3;
@@ -6,6 +7,7 @@ export const HeroContent = styled.div`
     position: absolute;
     padding: 8px 48px;
     display: flex;
+    height: calc(100vh - ${NAVBAR_HEIGHT});
     flex-direction: column;
     align-items: center;
 

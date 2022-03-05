@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { NAVBAR_HEIGHT } from "../Navbar/NavbarElements";
 
 export const BjjRow = styled.div`
     display: grid;
@@ -27,23 +28,7 @@ export const TextWrapper = styled.div`
     max-width: 100vw;
     padding-top: 0;
     padding-bottom: 100px;
-    margin-top: 110%;
-
-    //iPad Pro
-    @media screen and (max-width: 1024px){
-        padding-top: 80px;
-        margin-top: 200%;
-    }
-    //Tablet
-    @media screen and (max-width: 768px) {
-        padding-top: 400px;
-        margin-top: 230%;
-    }
-    //Mobile
-    @media screen and (max-width: 480px) {
-        margin-top: 270%;
-        padding-top: 500px;
-    }
+    margin-top: 10%;
 
 `;
 
@@ -55,7 +40,7 @@ export const TopLine1 = styled.p`
     letter-spacing: 1.4px;
     text-transform: uppercase;
     margin-bottom: 16px;
-    margin-top: 40%;
+    /* margin-top: 40%; */
 `;
 export const TopLine2 = styled.p`
     color: var(--blue);
@@ -87,14 +72,14 @@ export const Heading = styled.h1`
 `
 export const ImgWrap = styled.div`
     max-width: 555px;
+    position: relative;
     height: 100%;
-    margin-top: 100%;
+    margin-top: 10%;
     margin-bottom: 24px;
 
     //iPad Pro
     @media screen and (max-width: 1024px){
-    height: 100%;
-    margin-top: 150%;
+    /* height: 100%; */
 
     }
 
@@ -107,7 +92,7 @@ export const Img = styled.img`
     width: 100%;
     margin: 0 0 10px 0;
     padding-right: 0;
-    height: 30%;
+    height: 100%;
     border-radius: 8px;
 
 
@@ -117,6 +102,7 @@ export const BjjContent = styled.div`
     z-index: 3;
     max-width: 1400px;
     position: absolute;
+    height: calc(100vh - ${NAVBAR_HEIGHT});
     padding: 8px 24px;
     flex-direction: column;
     align-items: center;

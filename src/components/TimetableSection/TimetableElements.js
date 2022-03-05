@@ -1,9 +1,11 @@
 import styled from "styled-components";
+import { NAVBAR_HEIGHT } from "../Navbar/NavbarElements";
 
 export const TimetableContent = styled.div`
     z-index: 3;
     max-width: 1200px;
     position: absolute;
+    height: calc(100vh - ${NAVBAR_HEIGHT});
     padding: 8px 24px;
     display: flex;
     flex-direction: column;
@@ -18,21 +20,12 @@ export const TopLine = styled.p`
     letter-spacing: 1.4px;
     text-transform: uppercase;
     margin-bottom: 16px;
-    margin-top: 44%;
+    margin-top: 18%;
 `;
 
 export const ImgWrap = styled.div`
     max-width: 100%;
     height: 100%;
-
-    @media screen and (max-width: 768px){
-        min-height: 100vh;
-    }
-
-    @media screen and (max-width: 480px){
-        min-height: 100vh;
-        width: 510px;
-    }
 `;
 
 export const Img = styled.img`
@@ -40,6 +33,5 @@ export const Img = styled.img`
     margin: 0 0 10px 0;
     padding-right: 0;
     border-radius: 8px;
-
 
 `;

@@ -1,4 +1,16 @@
 import styled from "styled-components";
+import { NAVBAR_HEIGHT } from "../Navbar/NavbarElements";
+
+export const PricesContent = styled.div`
+    z-index: 3;
+    max-width: 1400px;
+    height: calc(100vh - ${NAVBAR_HEIGHT});
+    position: absolute;
+    padding: 8px 24px;
+    flex-direction: column;
+    align-items: center;
+`;
+
 
 export const PricesRow = styled.div`
     display: grid;
@@ -25,16 +37,9 @@ export const Column2 = styled.div`
 
 export const TextWrapper = styled.div`
     max-width: 100vw;
+    margin-top: -20%;
     padding-top: 0;
     padding-bottom: 100px;
-
-    @media screen and (max-width: 768px) {
-        margin-top: 200%;
-    }
-
-    @media screen and (max-width: 480px) {
-        margin-top: 220%;
-    }
 
 `;
 
@@ -46,7 +51,8 @@ export const TopLine1 = styled.p`
     letter-spacing: 1.4px;
     text-transform: uppercase;
     margin-bottom: 16px;
-    margin-top: 45%;
+    padding-top: 16px;
+    margin-top: 20%;
 `;
 export const TopLine2 = styled.p`
     color: var(--blue);
@@ -73,15 +79,15 @@ export const Heading = styled.h1`
 export const ImgWrap = styled.div`
     max-width: 555px;
     height: 100%;
-    margin-top: 110%;
+    margin-top: 10%;
 
-    @media screen and (max-width: 768px) {
+    /* @media screen and (max-width: 768px) {
         margin-top: -20%;
     }
 
     @media screen and (max-width: 480px) {
         margin-top: -30%;
-    }
+    } */
 
 `;
 
@@ -94,14 +100,6 @@ export const Img = styled.img`
 
 `;
 
-export const PricesContent = styled.div`
-    z-index: 3;
-    max-width: 1400px;
-    position: absolute;
-    padding: 8px 24px;
-    flex-direction: column;
-    align-items: center;
-`;
 
 
 export const PricesUl = styled.ul`
