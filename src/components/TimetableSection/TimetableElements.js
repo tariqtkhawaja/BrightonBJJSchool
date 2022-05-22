@@ -24,7 +24,7 @@ export const TopLine = styled.p`
 `;
 
 export const ImgWrap = styled.div`
-    max-width: 100%;
+    max-width: 550px;
     height: 100%;
 `;
 
