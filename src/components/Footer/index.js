@@ -31,7 +31,7 @@ const Footer = () => {
                                 <SocialIconsLink href="https://www.instagram.com/brightonbjjschool/" target="_blank" aria-label="Instagram">
                                     <FaInstagram />
                                 </SocialIconsLink>
-                                <SocialIconsLink href="mailto:grapplingcoopbrighton@gmail.com" target="_blank" aria-label="Email">
+                                <SocialIconsLink href="mailto:info@brightonbjj.co.uk" target="_blank" aria-label="Email">
                                     <FiMail />
                                 </SocialIconsLink>
                             </SocialIcons>
