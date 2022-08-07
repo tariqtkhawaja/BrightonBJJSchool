@@ -36,9 +36,9 @@ const WhatisBJJ = () => {
                         </Column1>
                         <Column2>
                             <ImgWrap>
-                                <Img src={require('../../Assets/Images/What-is-jiu-jitsu.PNG')} alt='Brazilian Jiu Jitsu students demonstrating De La Riva Guard'/>
+                                <Img src={require('../../Assets/Images/What-is-jiu-jitsu.PNG')} alt='Brazilian Jiu Jitsu students demonstrating De La Riva Guard' />
                                 <br></br>
-                                <Img src={require('../../Assets/Images/Berimbolo.PNG')} alt="Two BJJ players demonstraing a Berimbolo sweep"/>
+                                <Img src={require('../../Assets/Images/NoGi.jpg')} alt="Two BJJ players demonstraing a butterfly guard attack" />
                             </ImgWrap>
                         </Column2>
                     </BjjRow>
