@@ -125,3 +125,15 @@ export const BjjP = styled.p`
         font-size: 16px;
     }
 `;
+
+//Accordion Flex Section: 
+export const BjjFlexRow = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden; 
+`;
+

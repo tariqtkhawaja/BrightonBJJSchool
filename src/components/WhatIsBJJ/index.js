@@ -1,6 +1,7 @@
 import React from 'react';
 import Footer from '../Footer';
 import Layout from '../Layout';
+import AccordionComponent from './AccordionComponent';
 import {
     BjjContent,
     BjjRow,
@@ -10,6 +11,7 @@ import {
     TopLine2,
     Heading,
     BjjP,
+    BjjFlexRow,
     Img,
     ImgWrap,
     TextWrapper
@@ -42,6 +44,11 @@ const WhatisBJJ = () => {
                             </ImgWrap>
                         </Column2>
                     </BjjRow>
+                    <BjjFlexRow>
+                        <TextWrapper>
+                            <AccordionComponent />
+                        </TextWrapper>
+                    </BjjFlexRow>
                     <Footer />
                 </BjjContent>
 
