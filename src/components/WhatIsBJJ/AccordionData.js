@@ -1,6 +1,6 @@
 export const accordionData = [
     {
-        title: `What do I need for first class?`,
+        title: `What do I need for my first class?`,
         content: `For Gi class you will need to either bring your own Gi or arrange with us to get a loaner one. For submission grappling you will need a t- shirt and shorts with no zips and other metal elements. You should bring some water as well and a pair of flip flops, especially if you want to use the shower.`
     },
     {
@@ -56,7 +56,7 @@ export const accordionData = [
 
     },
     {
-        title: `Are there female only sessions ?`,
+        title: `Are there any female only sessions ?`,
         content: `At the moment we have free, informal female / non binary training session on Sundays 10.00 - 11.00. Please get in touch first if you are interested in attending.`,
 
     },
