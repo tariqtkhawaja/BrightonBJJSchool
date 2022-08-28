@@ -1,21 +1,18 @@
 import React, { useState } from 'react';
-import { Div } from './AccordionElements'
+import { AccordionContent, AccordionItem, AccordionTitle } from './AccordionElements'
 
 const Accordion = ({ title, content }) => {
     const [isActive, setIsActive] = useState(false);
 
     return (
-        <div className="accordion">
-            <div className="accordion-item">
-                <div className="accordion-title"
-                    onClick={() => setIsActive(!isActive)}>
-                    <Div>{title}</Div>
-                    <Div>{isActive ? '-' : '+'}</Div>
-                </div>
-                {isActive && <div className="accordion-content">{content}</div>}
-            </div>
-        </div>
-
+        <AccordionItem isActive={isActive}>
+            <AccordionTitle
+                onClick={() => setIsActive(!isActive)}>
+                <h3>{title}</h3>
+                <span>{isActive ? '-' : '+'}</span>
+            </AccordionTitle>
+            {isActive && <AccordionContent>{content}</AccordionContent>}
+        </AccordionItem>
     );
 }
 

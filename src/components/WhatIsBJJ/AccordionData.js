@@ -1,7 +1,7 @@
 export const accordionData = [
     {
         title: `What do I need for first class?`,
-        content: `For Gi class you will need to either bring your own Gi or arrange with us to get a loaner one.For submission grappling you will need a t- shirt and shorts with no zips and other metal elements.You should bring some water as well and a pair of flip flops, especially if you ant to use the shower.`
+        content: `For Gi class you will need to either bring your own Gi or arrange with us to get a loaner one. For submission grappling you will need a t- shirt and shorts with no zips and other metal elements. You should bring some water as well and a pair of flip flops, especially if you want to use the shower.`
     },
     {
         title: `Do I need to have previous experience ?`,
@@ -17,7 +17,7 @@ export const accordionData = [
     },
     {
         title: `Where can I park nearby?`,
-        content: `There is paid parking next to the building(off New England Street) but have some cash just in case as online payment system apparently happens to have occasional issues.There are also bicycle racks in front of the building if you are cycling.`
+        content: `There is paid parking next to the building (off New England Street) but have some cash just in case as online payment system apparently happens to have occasional issues. There are also bicycle racks in front of the building if you are cycling.`
 
     },
     {
@@ -43,7 +43,7 @@ export const accordionData = [
     },
     {
         title: `I'm a small person. Will I get smashed by bigger training partners?`,
-        content: `We aim to create a safe training experience for everyone.We urge people to use their common sense and care for their training partners.`
+        content: `We aim to create a safe training experience for everyone. We urge people to use their common sense and care for their training partners.`
     },
     {
         title: `Do you offer free sessions?`,
@@ -52,12 +52,12 @@ export const accordionData = [
     },
     {
         title: `I want to train in different clubs and don't want to commit to one. Is that ok?`,
-        content: `Absolutely yes.We encourage cross training and we are very much against any tribal nonsense in jiu jitsu.`
+        content: `Absolutely yes. We encourage cross training and we are very much against any tribal nonsense in jiu jitsu.`
 
     },
     {
         title: `Are there female only sessions ?`,
-        content: `At the moment we have free, informal female / non binary training session on Sundays 10.00 - 11.00.Please get in touch first if you are interested in attending.`,
+        content: `At the moment we have free, informal female / non binary training session on Sundays 10.00 - 11.00. Please get in touch first if you are interested in attending.`,
 
     },
 ]

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { NAVBAR_HEIGHT } from "../Navbar/NavbarElements";
+import { TopLine2 as ContactTopLine } from "../ContactSection/ContactElements";
 
 export const BjjRow = styled.div`
     display: grid;
@@ -32,7 +33,7 @@ export const TextWrapper = styled.div`
 
 `;
 
-export const TopLine1 = styled.p`
+export const TopLine1 = styled.h2`
     color: var(--blue);
     font-size: 1rem;
     line-height: 16px ;
@@ -42,7 +43,7 @@ export const TopLine1 = styled.p`
     margin-bottom: 16px;
     /* margin-top: 40%; */
 `;
-export const TopLine2 = styled.p`
+export const TopLine2 = styled.h2`
     color: var(--blue);
     font-size: 1rem;
     line-height: 16px ;
@@ -131,9 +132,20 @@ export const BjjFlexRow = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    cursor: pointer;
     align-items: center;
     box-sizing: border-box;
     overflow: hidden; 
 `;
 
+export const FaqWrapper = styled(TextWrapper)`
+width: 80vw;
+margin: 10px auto 0;
+`;
+
+export const FaqTopLine = styled(ContactTopLine)`
+font-size: 1.3rem;
+`;
+
+export const MoreInfoLink = styled.a`
+    color: var(--white);
+`

@@ -14,7 +14,9 @@ import {
     BjjFlexRow,
     Img,
     ImgWrap,
-    TextWrapper
+    TextWrapper,
+    FaqTopLine,
+    FaqWrapper, MoreInfoLink
 } from './BJJElements'
 const WhatisBJJ = () => {
     return (
@@ -45,9 +47,14 @@ const WhatisBJJ = () => {
                         </Column2>
                     </BjjRow>
                     <BjjFlexRow>
-                        <TextWrapper>
+                        <FaqWrapper>
+                            <FaqTopLine>FAQ</FaqTopLine>
                             <AccordionComponent />
-                        </TextWrapper>
+                            <BjjP>
+                                <p>For more white belt resources check out this excellent link from Bellingham BJJ:</p>
+                                <MoreInfoLink href='https://bellinghambjj.com/category/the-white-belt-starter-kit/' target="_blank" aria-label='Bellingham BJJ Article - The White Belt Starter Kit'>here</MoreInfoLink>
+                            </BjjP>
+                        </FaqWrapper>
                     </BjjFlexRow>
                     <Footer />
                 </BjjContent>
