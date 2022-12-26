@@ -37,8 +37,8 @@ const PricesSection = () => {
                             <TextWrapper>
                                 <TopLine1>Prices</TopLine1>
                                 <PricesUl>
-                                    <li>Class £8 </li>
-                                    <li>Open mat £5</li>
+                                    <li>£8 per session</li>
+                                    <li>Open mat/Women's Comp Class £5 per session</li>
                                     <li>Full-Time membership £60 per month (all classes and open mats included)</li>
                                 </PricesUl>
                                 <TopLine2>How to Join?</TopLine2>
