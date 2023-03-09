@@ -26,7 +26,7 @@ const Navbar = ({ toggle }) => {
                             Our Values
                         </NavLink>
                         <NavLink to="/what-is-bjj" activeStyle>
-                            What is BJJ?
+                            What is BJJ? & FAQs
                         </NavLink>
                         <NavLink to="/timetable" activeStyle>
                             Timetable

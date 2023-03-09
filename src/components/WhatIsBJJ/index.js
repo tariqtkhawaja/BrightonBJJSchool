@@ -1,6 +1,7 @@
 import React from 'react';
 import Footer from '../Footer';
 import Layout from '../Layout';
+import AccordionComponent from './AccordionComponent';
 import {
     BjjContent,
     BjjRow,
@@ -10,9 +11,12 @@ import {
     TopLine2,
     Heading,
     BjjP,
+    BjjFlexRow,
     Img,
     ImgWrap,
-    TextWrapper
+    TextWrapper,
+    FaqTopLine,
+    FaqWrapper, MoreInfoLink
 } from './BJJElements'
 const WhatisBJJ = () => {
     return (
@@ -42,6 +46,16 @@ const WhatisBJJ = () => {
                             </ImgWrap>
                         </Column2>
                     </BjjRow>
+                    <BjjFlexRow>
+                        <FaqWrapper>
+                            <FaqTopLine>FAQ</FaqTopLine>
+                            <AccordionComponent />
+                            <BjjP>
+                                <p>For more white belt resources check out this excellent link from Bellingham BJJ:</p>
+                                <MoreInfoLink href='https://bellinghambjj.com/category/the-white-belt-starter-kit/' target="_blank" aria-label='Bellingham BJJ Article - The White Belt Starter Kit'>here</MoreInfoLink>
+                            </BjjP>
+                        </FaqWrapper>
+                    </BjjFlexRow>
                     <Footer />
                 </BjjContent>
 

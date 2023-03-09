@@ -24,7 +24,7 @@ const Sidebar = ({ isOpen, toggle }) => {
                             Our Values
                         </SidebarLink>
                         <SidebarLink to="/what-is-bjj" onClick={toggle}>
-                            What is BJJ
+                            What is BJJ? & FAQs
                         </SidebarLink>
                         <SidebarLink to="/timetable" onClick={toggle}>
                             Timetable
