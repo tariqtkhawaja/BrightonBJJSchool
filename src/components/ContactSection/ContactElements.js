@@ -5,7 +5,7 @@ import { NAVBAR_HEIGHT } from "../Navbar/NavbarElements";
 export const ContactContent = styled.div`
     z-index: 3;
     max-width: 1200px;
-    /* height: calc(100vh + ${NAVBAR_HEIGHT}); */
+// height: calc(100vh + ${NAVBAR_HEIGHT}); 
     position: absolute;
     padding: 8px 24px;
     display: flex;
@@ -41,7 +41,7 @@ export const TextWrapper = styled.div`
     max-width: 100vw;
     padding-top: 0;
     padding-bottom: 100px;
-    margin-top: 15%;
+    margin-top: 80%;
     @media screen and (max-width: 820px) {
         margin-top: 25%;
     }

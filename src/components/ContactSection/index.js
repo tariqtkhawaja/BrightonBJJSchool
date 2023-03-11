@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../Layout'
-
+import Form from '../ContactForm'
 import { BjjGoogleMap } from './GoogleMap'
 import {
     ContactContent,
@@ -40,6 +40,7 @@ const ContactSection = () => {
                             </SocialIcons>
                         </SocialMediaWrap>
                         <br></br>
+                        <Form />
                         <TopLine2>Find Us</TopLine2>
                         <ContactP>We are at 2nd Floor of  Vantage Point, New England Road, Brighton BN1 4GW
                             You will need door codes to enter.</ContactP>

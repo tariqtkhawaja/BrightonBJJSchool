@@ -7,7 +7,7 @@ export const FormWrapper = styled.div`
     padding-bottom: 100px;
     display: flex;
     justify-content: center;
-    margin-top: 20%;
+    margin-top: 5%;
     z-index: 3;
     
 
@@ -22,7 +22,7 @@ export const FormContent = styled.form`
     width: 100%;
     background: #f0f0f0;
     border-radius: 25px;
-    padding: 20px;
+    padding: 50px;
     padding-bottom: 48px;
 `;
 
