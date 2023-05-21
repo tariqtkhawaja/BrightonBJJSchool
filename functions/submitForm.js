@@ -9,13 +9,13 @@ exports.handler = async (event, context, callback) => {
         secure: false,
         auth: {
             user: process.env.REACT_APP_USERNAME,
-            pass: process.env.REACT_APP_USERNAME
+            pass: process.env.REACT_APP_PASSWORD
         }
     });
 
     let info = await transporter.sendMail({
-        from: 'your-email@gmail.com',
-        to: email,
+        from: process.env.REACT_APP_USERNAME,
+        to: process.env.REACT_APP_TARGET_EMAIL,
         subject: 'Thank you for your submission',
         text: `Hi ${name}, thank you for your submission. We will get back to you as soon as possible.`,
         html: `<p>Hi ${name},</p><p>Thank you for your submission. We will get back to you as soon as possible.</p>`
@@ -26,3 +26,5 @@ exports.handler = async (event, context, callback) => {
         body: JSON.stringify(info)
     });
 };
+
+

@@ -36,7 +36,7 @@ const Form = () => {
             subject: subject.value,
             message: message.value,
         };
-        let response = await fetch(process.env.PORT_KEY || "http://localhost:5000/contact-us", {
+        let response = await fetch("/.netlify/functions/sendMail", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json;charset=utf-8",
@@ -65,7 +65,7 @@ const Form = () => {
             <FormWrapper>
                 <FormContent onSubmit={handleSubmit}>
                     <FormInput type="text" id="name" placeholder='Full Name' name="name" required></FormInput><br></br>
-                    <FormInput type='email' id="email" placeholder='Email' required></FormInput><br></br>
+                    <FormInput type='email' id="email" placeholder='Email'  name="email" required></FormInput><br></br>
                     <FormInput type='text' id="subject" placeholder='Subject' required></FormInput><br></br>
                     <FormLabel for="message">Message</FormLabel><br></br>
                     <FormTextArea id="message" placeholder="Please write your message here..." rows="14" cols="50" required></FormTextArea><br></br>
