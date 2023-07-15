@@ -74,7 +74,7 @@ export const Heading = styled.h1`
 export const ImgWrap = styled.div`
     max-width: 555px;
     position: relative;
-    height: 100%;
+    max-height: 100%;
     margin-top: 10%;
     margin-bottom: 24px;
 
@@ -90,10 +90,10 @@ export const ImgWrap = styled.div`
 `;
 
 export const Img = styled.img`
+    height: 100%;
     width: 100%;
     margin: 0 0 10px 0;
     padding-right: 0;
-    height: 100%;
     border-radius: 8px;
 
 
