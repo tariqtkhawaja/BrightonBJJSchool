@@ -83,6 +83,8 @@ In the project directory, you can run:
 
 ### `npm start`
 
+This Project runs on Node version v14.17.0, make sure you have this version of node installed.
+
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
