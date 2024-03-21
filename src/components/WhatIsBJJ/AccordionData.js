@@ -53,6 +53,6 @@ export const accordionData = [
     {
         title: `I want to train in different clubs and don't want to commit to one. Is that ok?`,
         content: `Absolutely yes. We encourage cross training and we are very much against any tribal nonsense in jiu jitsu.`
-
     },
+    
 ]
