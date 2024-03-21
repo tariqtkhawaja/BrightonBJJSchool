@@ -30,18 +30,28 @@ const Form = () => {
         e.preventDefault();
         setStatus("Sending ->");
         const { name, email, subject, message } = e.target.elements;
+        const encode = (data) => {
+            return Object.keys(data)
+                .map(
+                    (key) =>
+                        encodeURIComponent(key) +
+                        "=" +
+                        encodeURIComponent(data[key])
+                )
+                .join("&");
+        };
         let details = {
             name: name.value,
             email: email.value,
             subject: subject.value,
             message: message.value,
         };
-        let response = await fetch("/.netlify/functions/sendMail", {
+        let response = await fetch("/.netlify/functions/submitForm", {
             method: "POST",
             headers: {
-                "Content-Type": "application/json;charset=utf-8",
+                "Content-Type": "application/x-www-form-urlencoded",
             },
-            body: JSON.stringify(details),
+            body: encode({ "form-name": "contact", ...details }),
         });
         setStatus("Submit");
         let result = await response.json();
@@ -58,14 +68,16 @@ const Form = () => {
             })
         }
 
+
     }
 
     return (
         <>
             <FormWrapper>
                 <FormContent onSubmit={handleSubmit}>
+                    <FormInput type="hidden" name="form-name" value="contact" />
                     <FormInput type="text" id="name" placeholder='Full Name' name="name" required></FormInput><br></br>
-                    <FormInput type='email' id="email" placeholder='Email'  name="email" required></FormInput><br></br>
+                    <FormInput type='email' id="email" placeholder='Email' name="email" required></FormInput><br></br>
                     <FormInput type='text' id="subject" placeholder='Subject' required></FormInput><br></br>
                     <FormLabel for="message">Message</FormLabel><br></br>
                     <FormTextArea id="message" placeholder="Please write your message here..." rows="14" cols="50" required></FormTextArea><br></br>

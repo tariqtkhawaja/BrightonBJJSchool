@@ -55,9 +55,4 @@ export const accordionData = [
         content: `Absolutely yes. We encourage cross training and we are very much against any tribal nonsense in jiu jitsu.`
 
     },
-    {
-        title: `Are there any female only sessions ?`,
-        content: `At the moment we have free, informal female / non binary training session on Sundays 10.00 - 11.00. Please get in touch first if you are interested in attending.`,
-
-    },
 ]
