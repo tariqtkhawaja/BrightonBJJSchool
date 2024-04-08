@@ -1,5 +1,5 @@
 import React from 'react'
-import { LayoutContainer, LayoutBg, LayoutLogo } from './LayoutElements'
+import { LayoutContainer, LayoutLogo, LayoutBg } from './LayoutElements'
 
 const Layout = ({ children }) => {
     return (
@@ -10,9 +10,7 @@ const Layout = ({ children }) => {
                         <img src={require('../../Assets/Images/Logo-transparent1.png')} height="500vh" width="auto" alt="Logo" />
                     </LayoutLogo>
                 </LayoutBg>
-
                 {children}
-
             </LayoutContainer>
         </>
     )
