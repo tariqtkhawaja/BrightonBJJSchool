@@ -26,7 +26,6 @@ const TimetableSection = () => {
                         <TimetableRow>
                             <DayOfTheWeek>MONDAY</DayOfTheWeek>
                         </TimetableRow>
-                        <TimetableCell><ClassTime>11:00-12:00</ClassTime> GI TAKEDOWNS CLASS  WITH AARON</TimetableCell>
                         <TimetableCell> <ClassTime>18:00-19:00</ClassTime> GI BEGINNERS ONLY WITH AARON</TimetableCell>
                         <TimetableCell><ClassTime>19:00-20:30</ClassTime> GI FUNDAMENTALS WITH AARON</TimetableCell>
                         <TimetableRow>
