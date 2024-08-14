@@ -40,9 +40,9 @@ const WhatisBJJ = () => {
                         </Column1>
                         <Column2>
                             <ImgWrap>
-                                <Img src={require('../../Assets/Images/NoGi.jpg')} alt="Two BJJ players demonstraing a butterfly guard attack" />
+                                <Img src={require('../../Assets/Images/2024-Gi-grips.jpg')} alt="Two BJJ players demonstraing a takedown's grips" />
                                 <br></br>
-                                <Img src={require('../../Assets/Images/Gis2.jpg')} alt='Our Instructor demonstrating escapes from side control' />
+                                <Img src={require('../../Assets/Images/SideControl.jpg')} alt='2 BJJ players demonstrating an escape from side control' />
                             </ImgWrap>
                         </Column2>
                     </BjjRow>

@@ -28,9 +28,9 @@ const PricesSection = () => {
                     <PricesRow>
                         <Column1>
                             <ImgWrap>
-                                <Img src={require('../../Assets/Images/Group-photo4.jpg')} alt="Group Photo of Students Lined up, a mix of men and women white and blue belts" />
+                                <Img src={require('../../Assets/Images/2024-Gi-Class.jpg')} alt="Group Photo of Students Lined up, a mix of men and women white and blue belts" />
                                 <br></br>
-                                <Img src={require('../../Assets/Images/SideControl.jpg')} alt='One student demonstrating Side Control with crossface' />
+                                <Img src={require('../../Assets/Images/2024-Nogi.jpg')} alt='One student demonstrating a guard pass' />
                             </ImgWrap>
                         </Column1>
                         <Column2>
