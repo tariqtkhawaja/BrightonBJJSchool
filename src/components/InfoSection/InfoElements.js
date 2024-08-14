@@ -85,7 +85,15 @@ export const InfoContent = styled.div`
     padding: 8px 24px;
     flex-direction: column;
     align-items: center;
-    top: -100px
+    top: -100px;
+
+    @media screen and (max-width: 768px) {
+        top: -350px;
+        
+    }
+    @media screen and (max-width: 480px) {
+        top: -450px;
+    }
 `;
 
 
