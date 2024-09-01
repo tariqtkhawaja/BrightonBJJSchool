@@ -37,9 +37,9 @@ const PricesSection = () => {
                             <TextWrapper>
                                 <TopLine1>Prices</TopLine1>
                                 <PricesUl>
-                                    <li>£9 per session</li>
+                                    <li>£9.50 per session</li>
                                     <li>Open mat £5 per session</li>
-                                    <li>Full-Time membership £65 per month (all classes and open mats included)</li>
+                                    <li>Full-Time membership £67 per month (all classes and open mats included, paid on the 1st of every month)</li>
                                 </PricesUl>
                                 <TopLine2>How to Join?</TopLine2>
                                 <PricesP>Get in touch with us either via email or social media. If you need to borrow Gi for your first class or two, let us know in advance and we will have one ready for you. Make sure to cut your nails. If you have a gumshield/mouth guard bring it as well.</PricesP>
